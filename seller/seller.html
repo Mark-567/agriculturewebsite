@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sell Products</title>
+  <link rel="stylesheet" type="text/css" href="seller.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sell Products</h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="C:\Users\User\Desktop\shopsite\Agriculture Website\front\front.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+  <main>
+    <form>
+      <label for="name">Product Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" min="0"><br>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1"><br>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image"><br>
+
+      <button type="submit" onclick="addProduct(event)">Add Product</button>
+    </form>
+
+    <h2>Products for Sale</h2>
+    <div id="product-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
